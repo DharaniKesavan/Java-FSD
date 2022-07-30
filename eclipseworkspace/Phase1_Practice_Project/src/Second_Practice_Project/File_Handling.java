@@ -47,10 +47,12 @@ public class File_Handling{
       else
     	  System.out.println("EXIT");
       
+      sc.close();      
     }
 	  
 	catch(Exception e){
 		  e.getMessage();
 	}
+	
   }
 }
