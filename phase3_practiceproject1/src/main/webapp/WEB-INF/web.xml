@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee; http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>User details</display-name>
+  <welcome-file-list>    
+    <welcome-file>index.jsp</welcome-file>    
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>spring</servlet-name>
+  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  <load-on-startup>1</load-on-startup>
+  </servlet> 
+  <servlet-mapping>
+  <servlet-name>spring</servlet-name>
+  <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>User</servlet-name>
+  	<display-name>User</display-name>
+  	<description></description>
+  	<servlet-class>com.user.entity.User</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserController</servlet-name>
+  	<display-name>UserController</display-name>
+  	<description></description>
+  	<servlet-class>com.user.controller.UserController</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserDao</servlet-name>
+  	<display-name>UserDao</display-name>
+  	<description></description>
+  	<servlet-class>com.user.dao.UserDao</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserMapper</servlet-name>
+  	<display-name>UserMapper</display-name>
+  	<description></description>
+  	<servlet-class>com.user.dao.UserMapper</servlet-class>
+  </servlet>
+</web-app>
