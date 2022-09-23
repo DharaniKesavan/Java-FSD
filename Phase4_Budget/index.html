@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Budget Planner</title>
+    <link rel="stylesheet" href="cssfile.css" /> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Team Budget Planner</h1>
+        </div>
+        <div class="budget-section">
+            <div class="budget col col-md col-sm">
+                <h2>Total Budget</h2>
+                <img src="img/budget.png" alt="budget image" />
+                <p class="amount">₹ <span id="budgetAmount">0</span></p>
+            </div>
+            <div class="expenses col col-md col-sm">
+                <h2>Total Expenses</h2>
+                <img src="img/expense.jpg" alt="expense image" />
+                <p class="exp-amount">₹ <span id="expensesAmount">0</span></p>
+            </div>
+            <div class="balance col col-md col-sm">
+                <h2>Total Balance</h2>
+                <img src="img/balance.png" alt="balance image" />
+                <p class="bal-amount">₹ <span id="balanceAmount">0</span></p>
+            </div>
+        </div><br>
+        <div id="displayExpenses">
+            <div class="budget-list">
+                <div class="col">
+                    <h3>Expense Name</h3>
+                </div>
+                <div class="col">
+                    <h3>Expense value</h3>
+                </div>
+                <div class="col">
+                    <h3>Changes option</h3>
+                </div>
+            </div>
+            <div id="expValue"></div>
+        </div>
+    </div><br>
+    <center>
+        <div class="toggle">
+            <button id="myBtn" type="button">Add Budget & Expense</button>
+        </div>
+    </center>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Budget Form</h2>
+            </div>
+            <div class="modal-body">
+                <div class="budget-form" id="budgetform">
+                    <form id="addForm">
+                        <label for=""> Enter the Budget Amount</label> <br />
+                        <input type="number" id="number" /> <br />
+                        <button type="submit">Add Budget</button>
+                    </form>
+                </div>
+
+                <div class="expense-form" id="expense-form">
+                    <form action="" id="expForm">
+                        <div class="">
+                            <label for="">Enter the Expense Name</label> <br />
+                            <input type="text" id="expName" />
+                        </div>
+                        <div class="">
+                            <label for="">Enter the Expense Amount</label> <br />
+                            <input type="number" id="expNumber" />
+                        </div>
+                        <button type="submit" id="submitExpen">Add expense</button>
+                    </form>
+                    <button onclick="callBudget()" id="bug">
+              &lt;Back
+            </button>
+                </div>
+
+                <div class="edit-form" id="editForm">
+                    <form action="" id="saveEdit">
+                        <div class="">
+                            <label for="">Edit your expense</label> <br />
+                            <input type="text" id="editExpName" />
+                        </div>
+                        <div class="">
+                            <label for="">Edit expense amount</label> <br />
+                            <input type="number" id="editExpNumber" />
+                        </div>
+                        <button type="submit">Save changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="jsfile.js"></script>
+</body>
+</html>
