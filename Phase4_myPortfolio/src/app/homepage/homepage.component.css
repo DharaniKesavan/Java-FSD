@@ -1,0 +1,13 @@
+.bg {
+  object-fit:scale-down;
+  background-repeat: no-repeat;
+  background-size: cover;           
+}
+
+p{
+    font-size: 17px; 
+}
+
+.container{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

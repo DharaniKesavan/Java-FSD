@@ -1,0 +1,22 @@
+.ima{
+    height: 18px;
+    width: 20px;
+}
+
+.header{
+    background-color: rgb(207, 243, 196);
+    height: 100px;
+    margin: 10px;
+}
+
+#navbar{
+    
+    font-size: 20px;
+    padding: 22px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;   
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #088136;
+    color: #fff;
+  }
